@@ -1,0 +1,50 @@
+dir
+del destino
+dir
+copy .\README.md .\Documentos
+dir
+cd Documentos
+dir
+cd ..
+cd Scripts
+move .\script2.bat ..\Recursos
+dir
+cd ..\Recursos
+dir
+cd ..\Scripts
+ren script1.bat
+rename script1.bat
+rename /?
+ren script1.bat main.bat
+dir
+rmdir ..\Backup
+cd ..
+dir
+cd ..
+mkdir ProjetoSoftware_Backup
+copy ProjetoSoftware ProjetoSoftware_Backup
+cd ProjetoSoftware_Backup
+dir
+del README.md
+dir
+ cd ..
+copy .\ProjetoSoftware .\ProjetoSoftware_Backup
+cd ProjetoSoftware
+cd ..\ProjetoSoftware_Backup
+del README.md
+cd ..
+copy /?
+robocopy ProjetoSoftware ProjetoSoftware_Backup /E
+ProjetoSoftware_Backup
+cd ProjetoSoftware_Backup
+dir
+cd ~
+cd ..
+doskey /history > history.txt
+ cd ProjetoSoftware
+doskey /history > historico.txt
+cd ..
+tree ProjetoSoftware
+cd ProjetoSoftware
+type README.md
+doskey /history > historico.txt
